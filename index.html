@@ -511,6 +511,13 @@ html.og .strand{left:20%;width:60%;height:60px}
       <p class="quip">Quien llegue sin disfraz será el sacrificio de la noche.</p>
     </section>
 
+    <section class="panel t-wine reveal" aria-labelledby="l-bebida">
+      <p class="cap" id="l-bebida">Qué llevar</p>
+      <p class="value">Lo que vayas a tomar</p>
+      <p class="sub">Cada quien trae su propia bebida.</p>
+      <p class="quip">Aquí solo hay agua bendita, y esa no te va a servir de mucho.</p>
+    </section>
+
     <section class="panel split t-mustard reveal" aria-labelledby="l-donde">
       <div class="bats" aria-hidden="true">
         <span class="bat" style="top:18%"><svg viewBox="-52 -20 104 40"><use href="#batShape"/></svg></span>
@@ -659,7 +666,7 @@ html.og .strand{left:20%;width:60%;height:60px}
   const stamp = (d, local) => { const x = local ? new Date(d.getTime() + off * 60e3) : d; return `${x.getUTCFullYear()}${pad(x.getUTCMonth() + 1)}${pad(x.getUTCDate())}T${pad(x.getUTCHours())}${pad(x.getUTCMinutes())}00${local ? '' : 'Z'}`; };
   const iso = d => { const x = new Date(d.getTime() + off * 60e3); return `${x.getUTCFullYear()}-${pad(x.getUTCMonth() + 1)}-${pad(x.getUTCDate())}T${pad(x.getUTCHours())}:${pad(x.getUTCMinutes())}:00${C.desfaseUTC}`; };
   const evTitle = `${C.titulo} · ${C.anfitrionas}`;
-  const evDetails = 'Disfraz obligatorio. Quien llegue sin disfraz será el sacrificio de la noche.';
+  const evDetails = 'Disfraz obligatorio. Trae lo que vayas a tomar.';
   $('#calGoogle').href = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(evTitle)}&dates=${stamp(start, true)}/${stamp(end, true)}&ctz=${enc(C.zonaHoraria)}&location=${enc(dirCompleta)}&details=${enc(evDetails)}`;
   $('#calOutlook').href = `https://outlook.live.com/calendar/0/action/compose?subject=${enc(evTitle)}&startdt=${enc(iso(start))}&enddt=${enc(iso(end))}&location=${enc(dirCompleta)}&body=${enc(evDetails)}`;
   const icsText = s => s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
