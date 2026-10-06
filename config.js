@@ -23,18 +23,18 @@ window.FIESTA = {
   desfaseUTC: '-06:00',
 
   direccion: {
-    calle: 'Cerrada 3a. de Ejido',
+    calle: 'Cerrada 2a. de Ejido',
     lote: 'Mz 111 Lt 12A',
     colonia: 'Santa María Aztahuacan',
     ciudad: '09500 Iztapalapa, CDMX',
     pais: 'México'
   },
   // Google y Apple no reconocen "Mz 111 Lt 12A"; los mapas usan la
-  // calle y estas coordenadas (verificadas en ambos el 5 de octubre).
+  // calle y estas coordenadas (verificadas en ambos el 5 de octubre, ya con la 2a. cerrada).
   mapa: {
-    busqueda: '3a. Cerrada de Ejido, Santa María Aztahuacan, 09500 Iztapalapa, CDMX',
-    lat: 19.3503035,
-    lng: -99.0273867
+    busqueda: '2a. Cerrada de Ejido, Santa María Aztahuacan, 09500 Iztapalapa, CDMX',
+    lat: 19.3503113,
+    lng: -99.0260229
   },
 
   // WhatsApp: código de país + número, sin espacios ni "+".
